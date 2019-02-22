@@ -6,7 +6,7 @@ ipv6:
     - "ipv6 nd managed-config-flag"
     - "ipv6 nd other-config-flag"
 ipv4:
-    - "ip helper-address 10.21.93.16"
+    - "ip helper-address youraddresshere"
 
 
 
