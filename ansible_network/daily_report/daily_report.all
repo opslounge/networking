@@ -1,0 +1,1599 @@
++++++++++++++++++++++++++++++++++++++++++++
+Daily Report for node: sn1-agr-e03-36
++++++++++++++++++++++++++++++++++++++++++++
+
+*** LOGGING ALERTS ***
+Nov 16 13:21:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 13:21:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 13:28:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 13:30:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 13:55:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 13:55:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 14:14:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 14:14:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 14:34:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 14:34:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 14:40:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 14:40:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 14:41:37 sn1-agr-e03-36 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet20 has been removed
+Nov 16 14:41:47 sn1-agr-e03-36 Fru: %FRU-6-TRANSCEIVER_INSERTED: A transceiver for interface Ethernet20 has been inserted. manufacturer: FINISAR CORP model: FTL410QE2C part number FTL410QE2C rev A serial number XW60SU9
+Nov 16 14:42:30 sn1-agr-e03-36 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet20 has been removed
+Nov 16 14:42:33 sn1-agr-e03-36 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet19 has been removed
+Nov 16 14:42:43 sn1-agr-e03-36 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet22 has been removed
+Nov 16 14:42:43 sn1-agr-e03-36 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet21 has been removed
+Nov 16 14:47:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 14:47:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 14:53:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 14:55:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 14:56:50 sn1-agr-e03-36 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 16 14:57:27 sn1-agr-e03-36 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 16 14:58:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 14:59:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 15:04:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 15:04:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 15:08:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 15:08:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 15:15:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 15:16:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 15:25:16 sn1-agr-e03-36 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 16 15:25:54 sn1-agr-e03-36 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 16 15:42:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 15:42:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 15:49:42 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 15:49:42 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 15:52:12 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 15:52:12 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 16:04:12 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 16:04:12 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 16:13:12 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 16:13:42 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 16:29:42 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 16:29:42 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 16:34:42 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 16:35:12 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 16:38:12 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 16:38:13 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 16:40:43 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 16:40:43 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 17:01:43 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 17:01:43 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 17:06:13 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 17:06:13 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 17:16:43 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 17:16:43 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 17:22:43 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 17:22:43 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 18:14:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 18:14:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 18:20:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 18:20:44 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 18:29:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 18:29:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 18:37:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 18:37:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 18:51:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 18:51:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 19:12:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 19:12:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 19:14:14 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 19:14:44 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 19:16:44 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 19:16:44 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 19:25:44 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 19:25:44 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 19:33:44 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 19:33:44 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 19:51:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 19:51:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 19:59:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 19:59:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 20:13:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 20:15:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 20:28:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 20:29:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 20:34:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 20:34:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 20:44:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 20:44:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 20:50:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 20:51:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 20:58:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 20:58:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 21:01:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 21:02:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 21:09:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 21:11:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 21:27:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 21:27:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 21:53:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 21:54:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 21:57:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 21:57:45 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 22:04:15 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 22:05:16 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 22:34:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 22:35:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 22:42:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 22:42:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 23:03:16 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 23:03:16 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 23:06:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 23:06:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 23:10:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 23:11:16 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 23:15:16 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 23:15:16 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 23:21:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 23:21:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 23:25:46 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 23:26:16 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 23:46:47 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 16 23:46:47 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 16 23:59:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 00:01:47 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 00:08:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 00:08:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 00:12:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 00:12:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 00:25:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 00:25:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 00:37:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 00:37:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 00:47:47 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 00:47:47 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 01:07:17 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 01:07:47 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 01:17:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 01:17:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 01:23:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 01:24:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 01:28:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 01:29:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 01:32:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 01:32:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 01:34:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 01:35:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 01:43:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 01:44:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 02:03:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 02:03:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 02:16:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 02:17:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 02:32:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 02:32:48 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 02:47:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 02:47:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 02:59:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 02:59:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 03:09:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 03:09:18 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 03:53:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 03:54:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 04:03:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 04:03:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 04:05:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 04:05:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 04:19:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 04:19:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 04:25:49 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 04:25:49 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 04:27:49 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 04:28:49 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 04:32:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 04:32:19 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 04:57:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 04:57:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 05:00:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 05:01:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 05:07:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 05:07:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 05:14:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 05:15:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 05:31:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 05:31:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 05:43:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 05:43:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 05:46:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 05:46:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 05:50:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 05:50:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 05:52:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 05:52:50 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 05:55:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 05:55:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 06:02:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 06:03:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 06:15:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 06:15:20 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 06:24:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 06:24:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 06:32:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 06:33:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 06:37:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 06:38:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 06:45:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 06:46:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 06:49:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 06:49:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 06:54:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 06:54:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 07:16:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 07:18:21 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 07:20:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 07:21:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 07:25:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 07:27:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 07:38:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 07:38:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 07:41:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 07:41:51 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 07:54:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 07:54:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 07:59:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:00:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 08:02:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:04:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 08:14:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:15:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 08:17:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:17:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 08:20:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:20:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 08:28:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:28:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 08:34:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:34:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 08:39:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:39:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 08:43:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:44:52 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 08:57:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 08:58:22 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 09:20:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 09:21:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 09:28:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 09:28:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 09:33:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 09:33:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 09:35:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 09:35:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 09:38:53 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 09:38:53 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 09:41:53 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 09:42:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 09:47:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 09:47:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:13:53 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:14:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:23:53 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:24:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:26:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:26:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:28:53 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:29:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:35:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:35:53 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:40:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:40:23 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:46:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:46:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:48:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:48:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:54:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:55:54 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 10:58:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 10:58:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 11:15:54 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 11:16:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 11:21:54 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 11:22:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 11:24:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 11:24:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 11:29:54 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 11:29:54 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 11:33:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 11:33:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 11:45:54 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 11:45:54 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 11:48:40 sn1-agr-e03-36 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 17 11:49:17 sn1-agr-e03-36 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 17 11:51:54 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 11:52:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 11:57:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 11:57:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 12:08:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 12:08:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 12:12:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 12:12:24 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 12:15:05 sn1-agr-e03-36 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Nov 17 12:15:42 sn1-agr-e03-36 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Nov 17 12:25:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 12:26:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 12:29:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 12:30:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 12:32:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 12:32:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 12:43:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 12:43:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 12:53:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 12:53:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 13:04:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 13:04:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 13:08:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 13:08:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 13:19:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 13:19:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 13:25:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 13:26:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 13:29:25 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 13:29:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 13:35:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 13:35:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 13:37:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 13:37:55 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 13:56:26 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_TIMEOUT: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 timed out on interface Ethernet13/1
+Nov 17 13:56:26 sn1-agr-e03-36 Lldp: %LLDP-5-NEIGHBOR_NEW: LLDP neighbor with chassisId 24a9.3714.2d96 and portId 7e2a.ac51.ccc7 added on interface Ethernet13/1
+Nov 17 14:14:08 sn1-agr-e03-36 FastCapi: %CLEAR-5-COUNTERS: Clear counters on all interfaces by ansible on command-api (10.21.93.29)
+**********************
+
+*** Interface Rates above 50%***
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+***********************
+
+*** Interface Discards ***
+    No interface discards!!
+
+
+*** Interface Errors ***
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+                       Ethernet13/1 : fcsErrors ---> 5
+         
+            
+            
+                       Ethernet13/1 : inErrors ---> 69752
+         
+            
+                       Ethernet13/1 : symbolErrors ---> 6
+         
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+ 
+
++++++++++++++++++++++++++++++++++++++++++++
+Daily Report for node: sn1-agr-e03-38
++++++++++++++++++++++++++++++++++++++++++++
+
+*** LOGGING ALERTS ***
+Nov 16 14:42:36 sn1-agr-e03-38 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet20 has been removed
+Nov 16 14:42:37 sn1-agr-e03-38 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet19 has been removed
+Nov 16 14:42:47 sn1-agr-e03-38 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet22 has been removed
+Nov 16 14:42:47 sn1-agr-e03-38 Fru: %FRU-6-TRANSCEIVER_REMOVED: The transceiver for interface Ethernet21 has been removed
+Nov 17 14:14:08 sn1-agr-e03-38 FastCapi: %CLEAR-5-COUNTERS: Clear counters on all interfaces by ansible on command-api (10.21.93.29)
+**********************
+
+*** Interface Rates above 50%***
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+***********************
+
+*** Interface Discards ***
+    No interface discards!!
+
+
+*** Interface Errors ***
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+ 
+

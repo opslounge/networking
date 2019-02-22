@@ -1,0 +1,47 @@
+! templates/pc.j2
+
+#jinja2: trim_blocks: True
+#jinja2: lstrip_blocks: True 
+
+{% set vars = {'pc_set':  False, 'done': False } %}
+{# loop trough all the lldp neighbors found looking for names that match name in tor_switches #}
+
+{% for key, values in ansible_net_neighbors.items() %}
+
+    {% set k = key %}
+
+    {% for v in values %}
+       {% set neigh = v['host'].split('.') | first %}
+
+       {% for sw in tor_switches %}
+
+         {% if neigh == sw.name %}
+         {# found a match need to set this interface as member of a port-channel #}
+
+interface {{ key }}
+
+   channel-group {{ sw.port_channel }} mode active        
+          
+         {% if vars.update({'pc_set': True}) %}  {% endif %}
+
+         {% endif %}   
+         {% if vars.pc_set and not vars.done %}
+         {# only need to make the port-channel once #}
+
+   interface port-channel {{  sw.port_channel }}
+
+      switchport mode trunk
+
+      mlag  {{ sw.port_channel }}
+
+      {# this is to ensure we aren't configuring the port-channel more than once #}
+      {% if vars.update({'done': True}) %}  {% endif %}
+
+         {% endif %}         
+
+      {% endfor %}
+
+    {% endfor %} 
+
+{% endfor %}
+

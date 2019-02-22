@@ -1,0 +1,28 @@
+---
+#This playbook is used to push the public key for the ansible user on prod-ans01 to an arista switch
+#It must use the provider_user dictionary in group/all vars file because it can not connect with keys until
+#this public key file is in place.
+#Most of the time this should be run as part of the larger playbook push_ansible_keys.yaml, however this can 
+#be used on its own.
+#
+#How to invoke:
+#ansible-playbook ansible-keys.yaml
+
+# make sure the hosts value is set to the correct group or host you want to run the play against
+- hosts: all
+  gather_facts: no
+  connection: local
+
+  tasks:
+    - name:  add ansible user key
+      eos_config:
+          lines: 
+            - "username ansible sshkey file flash:ansible.pub"
+          provider: "{{ provider_user }}"
+
+    - name: write config
+      eos_command:
+        commands: "write memory"
+        provider: "{{ provider_user }}"
+
+      

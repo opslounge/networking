@@ -1,0 +1,73 @@
+#jinja2: trim_blocks: True
+{# Note that this template uses direct indexing to get that command from the 'stdout' #}
+{# So if any additional commands are added then they should be added to the end of the list #}
+{# Currently we have #}
+{#  stdout[0]  = 'show logging alerts' #}
+{#  stdout[1] =  'show interfaces' #}
+{#  stdout[2] = ' show interfaces counters discards' #}
+{#  stdout[3] = 'show interfaces counters errors' #}
++++++++++++++++++++++++++++++++++++++++++++
+Daily Report for node: {{ ansible_host }}
++++++++++++++++++++++++++++++++++++++++++++
+
+*** LOGGING ALERTS ***
+{% if status['stdout'][0] == '' %}
+No Alerts Found
+{% else %}
+{{ status['stdout'][0] }}
+{% endif %}
+**********************
+
+*** Interface Rates above 50%***
+{# loop through and find any interface that is using over 50% of the bandwidth #}
+{% for interface, value in status['stdout'][1]['interfaces'].items() %}
+     
+    {% if value.bandwidth != 0 %} 
+ 
+    {% set k  =  value.bandwidth %}
+    {% set b =  value.interfaceStatistics.inBitsRate * 8 %}
+    {% set o = value.interfaceStatistics.outBitsRate * 8 %} 
+
+    {% if interface.startswith('Ethernet') %}
+        {% if (b / k) * 100  > 50 %} 
+            {{ interface }} --- {{ value.description }}
+                 inBitsRate: {{ value.interfaceStatistics.inBitsRate }} 
+        {% endif %}
+        {% if (o / k) * 100  > 50 %} 
+            {{ interface }} --- {{ value.description }}
+                 outBitsRate: {{ value.interfaceStatistics.outBitsRate }} 
+        {% endif %}
+
+    {% endif %} 
+    {% endif %} 
+{% endfor %}
+***********************
+
+*** Interface Discards ***
+{# display any non-zero discard counters #}
+{% if status['stdout'][2]['inDiscardsTotal'] == 0 and status['stdout'][2]['outDiscardsTotal'] == 0 %}
+  {# if we are inside here we know al interfaces are clean so we can abort #}
+  No interface discards!!
+{% else %}
+{% for interface, value in status['stdout'][2]['interfaces'].items() %}
+   {% if value['inDiscards'] > 0 or value['outDiscards'] > 0 %}
+      {{ interface }}
+            inDiscards: {{ value['inDiscards'] }}
+            outDiscards: {{  value['outDiscards'] }}
+   {% endif %} 
+{% endfor %}
+
+{% endif %}
+
+
+*** Interface Errors ***
+{# display any non-zero L1 Error counters #}
+{% for interface, value in status['stdout'][3]['interfaceErrorCounters'].items() %}
+   {% for counters, val in value.items() %}
+        {% if val > 0 %}
+            {{ interface }} : {{ counters}} ---> {{ val }}
+        {% endif %} 
+   {% endfor %}
+
+{% endfor %} 
+

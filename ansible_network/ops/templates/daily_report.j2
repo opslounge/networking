@@ -1,0 +1,62 @@
+#jinja2: trim_blocks: True
++++++++++++++++++++++++++++++++++++++++++++
+Daily Report for node: {{ ansible_host }}
++++++++++++++++++++++++++++++++++++++++++++
+
+*** LOGGING ALERTS ***
+{% if status['stdout'][0] == '' %}
+No Alerts Found
+{% else %}
+{{ status['stdout'][0] }}
+{% endif %}
+**********************
+
+*** Interface Rates above 50%***
+{% for interface, value in status['stdout'][1]['interfaces'].items() %}
+     
+    {% if value.bandwidth != 0 %} 
+ 
+    {% set k  =  value.bandwidth %}
+    {% set b =  value.interfaceStatistics.inBitsRate * 8 %}
+    {% set o = value.interfaceStatistics.outBitsRate * 8 %} 
+
+    {% if interface.startswith('Ethernet') %}
+        {% if (b / k) * 100  > 50 %} 
+            {{ interface }} --- {{ value.description }}
+                 inBitsRate: {{ value.interfaceStatistics.inBitsRate }} 
+        {% endif %}
+        {% if (o / k) * 100  > 50 %} 
+            {{ interface }} --- {{ value.description }}
+                 outBitsRate: {{ value.interfaceStatistics.outBitsRate }} 
+        {% endif %}
+
+    {% endif %} 
+    {% endif %} 
+{% endfor %}
+***********************
+
+*** Interface Discards ***
+{% if status['stdout'][2]['inDiscardsTotal'] == 0 and status['stdout'][2]['outDiscardsTotal'] == 0 %}
+  No interface discards!!
+{% else %}
+{% for interface, value in status['stdout'][2]['interfaces'].items() %}
+   {% if value['inDiscards'] > 0 or value['outDiscards'] > 0 %}
+      {{ interface }}
+            inDiscards: {{ value['inDiscards'] }}
+            outDiscards: {{  value['outDiscards'] }}
+   {% endif %} 
+{% endfor %}
+
+{% endif %}
+
+
+*** Interface Errors ***
+{% for interface, value in status['stdout'][3]['interfaceErrorCounters'].items() %}
+   {% for counters, val in value.items() %}
+        {% if val > 0 %}
+            {{ interface }} : {{ counters}} ---> {{ val }}
+        {% endif %} 
+   {% endfor %}
+
+{% endfor %} 
+

@@ -1,0 +1,48 @@
+---
+- name: Gather Show Version Facts
+  eos_command:
+    commands:
+      - 'show version'
+    provider: '{{ provider }}'
+  register: showvers
+
+#- set_fact: perform_upgrade={{ target_version not in showvers['stdout'][0]['version'] }}
+- set_fact: perform_upgrade=True 
+
+- name: Install new SWI
+  eos_command:
+    commands:
+      - 'install source {{ swi_url }} now'
+    provider: '{{ provider }}'
+    timeout: 300
+  when: perform_upgrade
+  tags: install
+
+- name: Reload the Switch
+  eos_command:
+    commands:
+      - 'reload in 5'
+    provider: '{{ provider }}'
+  when: perform_upgrade
+  ignore_errors: yes
+
+- name: Wait for switch to come back online
+  wait_for:
+    host={{ inventory_hostname }}
+    delay=60
+    port=22
+    timeout={{ reboot_timer | default(300) }}
+  when: perform_upgrade
+
+- pause: seconds=5
+  when: perform_upgrade
+
+- name: Gather Show Version Facts
+  eos_command:
+    commands:
+      - 'show version'
+    provider: '{{ provider }}'
+  register: showvers_post
+  when: perform_upgrade
+
+- debug: var=perform_upgdrade

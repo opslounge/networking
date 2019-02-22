@@ -1,0 +1,34 @@
+---
+# This playbook will configure a port-channel on distribution switches
+# based on LLDP neighbor information.  It will look at the LLDP table
+# on the distribution switches and for each interface that matches the 
+# name of a given tor_switche it will put those ports in a port-channel 
+# numbered based on the inforamtion in the port_channel number variable
+#
+# As a note the provider here will be provider_user since this playbook
+# is likely to be run as the ops user which doesn't have access to the ssh key
+#
+# To Run:
+# ansible-playbook new_dist_pc.yaml
+- hosts: dist
+  gather_facts: no
+  connection: local
+  
+  vars:
+     tor_switches:
+          - name: sn1-msw-d11-42
+            port_channel: 134
+          - name: sn1-msw-d12-42
+            port_channel: 124
+
+  tasks: 
+    - name: gather eos facts
+      eos_facts:
+         provider: "{{ provider_user }}"
+
+    - name: apply port-channel config
+      eos_config:
+         src: pc_config.j2
+         provider: "{{ provider_user }}"
+         save: yes
+

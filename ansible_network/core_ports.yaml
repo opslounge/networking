@@ -1,0 +1,59 @@
+---
+# runs through and configures interfaces on a given host
+# the interfce command variable should be set with the correct
+# parameters
+#
+# Right now you can set the following parameters
+# access vlan
+# switchport mode
+# channel-group
+# speed 40g
+# mlag number
+# description
+# trunk native vlan
+#
+# If you want to add the configs you need to set action == add
+# If you want to remove the configs you need to set the action == del
+#
+# So if you want to remove the access vlan make sure you have
+# access_vlan set to a value and action set to del.  If the action is del
+# then every command that is uncommented and has a value with be removed
+# 
+# To Run:
+# ansible-playbook  config_int_commands.yaml
+- hosts: core
+  gather_facts: no
+  connection: local
+ 
+  vars:
+     range: et26/1,et27/1,et28/1,et29/1
+     conf_action: add
+     interface_cmds:
+           - name:  "{{ range }}"
+             description: 'active cluster uplinks'
+            # access_vlan: 2178
+            # native_vlan: 2202
+           #  mode: trunk 
+            # channel_group: 303
+            # mlag_channel: 303
+             speed_40: Forced
+
+          # - name:  et44
+            # description: 'test'
+      #       access_vlan: 2212
+       #      native_vlan: 10
+           #  mode: on
+           #  channel_group: 1024
+          #   mlag_channel: 1024
+             
+             
+  tasks:
+    - name: run commands
+      eos_config:
+         provider: "{{ provider_user_cli }}"
+         src: int_config.j2
+         save: true
+ 
+
+
+

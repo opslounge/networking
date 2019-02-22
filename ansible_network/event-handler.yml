@@ -1,0 +1,19 @@
+---
+- hosts: msw-g,msw-f,msw-e,msw-d,msw-c,msw-b,msw-a
+  connection: local
+  gather_facts: false
+
+  tasks:
+      - name: sending event-handler
+        eos_config:
+            provider: "{{ provider_user }}"
+            parents: event-handler save-config
+            lines: "{{ item }}"
+            save_when: modified
+            after:
+              - "no event-handler configpush"
+        with_items:
+            - trigger on-startup-config
+            - "action bash export SERIAL=`FastCli -p 15 -c 'show ver' | grep Serial | tr -s ' ' | cut -d ' ' -f 3 | tr -d '\r'`; curl http://172.16.0.5:8080/nodes/$SERIAL/event-config/startup-config.`date +%Y%m%d-%H%M%S` -H \"content-type: text/plain\" --data-binary @/mnt/flash/startup-config -X PUT"
+            - delay 10
+             

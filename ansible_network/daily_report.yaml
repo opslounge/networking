@@ -1,0 +1,93 @@
+---
+# this playbook is mean to be run a cron job to collect important information from the switches
+# As of this version it checks the following
+#    1) show logging alerts - so if there is an abnormal logs on the switch
+#    2) show interfaces - this is mainly to get interface bandwidth
+#    3) show interfaces counters discards - buffering issues/drops
+#    4) show interfaces counters errors - L1 issues
+#
+#    Most of the heavy lifting in this playbook is done via the template file located at templates/daily_report.j2.  
+#    That file will explain more about how the report is generated after the commands are run
+#
+#    Note you can add more commands to the list just to be sure to add them to the end of the commands in the 
+#    Gather System Status task.  This way it will not break the template file in its current state
+
+- hosts: sn1-agr-e03-38,sn1-agr-e03-36
+  gather_facts: no
+  connection: local
+
+  # these var are tere to clear state to get a point in time view of the counters
+  # If the clear_counters == True then the clear counters command will be run on the 
+  # switch and there will be a pause == to the pause_timer variable.  If clear_counters == False 
+  # then no clear will be issued and no pause will happen  
+  vars:
+     clear_counters: True
+     pause_timer:  30
+
+  tasks:
+    - name: Clear Counters 
+      eos_command:
+         commands:
+             - command: 'clear counters'
+               output: 'text'
+         provider: '{{ provider_user }}'
+      when: clear_counters
+
+    - name: pausing for clearing effect
+      pause:
+        seconds: '{{ pause_timer }}'
+      when: clear_counters
+
+    - name: Gather System Status
+      eos_command:
+        commands:
+          - command: 'show logging last 25 hours'
+            output: 'text'
+          - command: 'show interfaces' 
+            output: json
+          - command: 'show interfaces counters discards' 
+            output: json
+          - command: 'show interfaces counters errors' 
+            output: json
+          - command: 'show interfaces status'
+            output: json
+        provider: '{{ provider_user }}'
+      register: status
+
+    # run through the show commands and look for anything interesting 
+    # see the templates/daily_report.j2 file for more information
+    - name: Write Results
+      template:
+           src: daily_report.j2
+           dest: "{{ playbook_dir }}/daily_report/daily_report.{{ ansible_host }}"
+
+    # remove the files from prior runs
+    - name: Remove old agg file
+      file:
+          path: "{{ item }}"
+          state: absent
+      with_items:
+          -  "{{ playbook_dir }}/daily_report/daily_report.all"
+          -  "{{ playbook_dir }}/daily_report/daily_report.out"
+      ignore_errors: true
+
+    - name: copy file to aggregate results
+      shell: "cat {{ playbook_dir }}/daily_report/daily_report.{{ ansible_host }} >> {{ playbook_dir }}/daily_report/daily_report.all"
+    
+    # make things look pretty 
+    - name: remove empty lines
+      shell: "cat {{ playbook_dir }}/daily_report/daily_report.all |  awk 'NF' > {{ playbook_dir }}/daily_report/daily_report.out"
+
+    - name: mail out results of daily report
+      mail:
+        host: 10.21.93.16
+        port: 25
+        username: logging
+        password: Welcome1!
+        to: puretec-notify@purestorage.com
+        subject: "Ansible Daily Report Run"
+        attach: "{{ playbook_dir }}/daily_report/daily_report.out"
+      when: inventory_hostname == ansible_play_hosts[0]
+      tags: mail
+        
+

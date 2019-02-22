@@ -1,0 +1,9 @@
+provider_user:
+  host: '{{ inventory_hostname }}'
+  username: admin
+  password: Osmium&6
+  authorize: true
+  use_ssl: yes
+  transport: cli
+  validate_certs: false
+ 

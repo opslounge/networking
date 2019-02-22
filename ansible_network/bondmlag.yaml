@@ -1,0 +1,100 @@
+---
+# runs through and configures interfaces on a given host
+# the interfce command variable should be set with the correct
+# parameters
+#
+# Right now you can set the following parameters
+# access vlan
+# switchport mode
+# channel-group
+# speed 40g
+# mlag number
+# description
+# trunk native vlan
+#
+# If you want to add the configs you need to set action == add
+# If you want to remove the configs you need to set the action == del
+#
+# So if you want to remove the access vlan make sure you have
+# access_vlan set to a value and action set to del.  If the action is del
+# then every command that is uncommented and has a value with be removed
+# 
+# To Run:
+# ansible-playbook  config_int_commands.yaml
+- hosts: all
+  gather_facts: no
+  connection: local
+ 
+  vars:
+     range: 10
+     conf_action: add
+     interface_cmds:
+          # - name:  "{{ range }}"
+           #  description: 'storage'
+            # access_vlan: 154
+            # native_vlan: 2202
+           #  mode: trunk 
+            # channel_group: 303
+            # mlag_channel: 303
+            # speed_40: Forced
+
+           - name:  port-channel 1001
+             mlag_channel: '1001'
+             access_vlan: 154
+           - name:  port-channel 1002
+             mlag_channel: '1002'
+             access_vlan: 154
+           - name:  port-channel 1003
+             mlag_channel: '1003'
+             access_vlan: 154
+           - name:  port-channel 1004
+             mlag_channel: '1004'
+             access_vlan: 154
+           - name:  port-channel 1005
+             mlag_channel: '1005'
+             access_vlan: 154
+           - name:  port-channel 1006
+             mlag_channel: '1006'
+             access_vlan: 154
+           - name:  port-channel 1007
+             mlag_channel: '1007'
+             access_vlan: 154
+           - name:  port-channel 1008
+             mlag_channel: '1008'
+             access_vlan: 154
+           - name:  port-channel 1009
+             mlag_channel: '1009'
+             access_vlan: 154
+           - name:  port-channel 1010
+             mlag_channel: '1010'
+             access_vlan: 154 
+           - name:  port-channel 1011
+             mlag_channel: '1011'
+             access_vlan: 154
+           - name:  port-channel 1012
+             mlag_channel: '1012'
+             access_vlan: 154
+           - name:  port-channel 1013
+             mlag_channel: '1013'
+             access_vlan: 154
+           - name:  port-channel 1014
+             mlag_channel: '1014'
+             access_vlan: 154 
+           - name:  port-channel 1015
+             mlag_channel: '1015' 
+             access_vlan: 154
+           - name:  port-channel 1016
+             mlag_channel: '1016'
+             access_vlan: 154 
+
+
+  tasks:
+    - name: run commands
+      eos_config:
+         provider: "{{ provider_user_cli }}"
+         src: int_config.j2
+         save: true
+ 
+
+
+

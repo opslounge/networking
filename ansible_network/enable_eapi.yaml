@@ -1,0 +1,19 @@
+---
+# This playbook will enable eapi functionality for switch.  eAPI 
+# should be enabled on any node where you want the output of a show 
+# command to looks sane
+# specfically this will add the following configuration
+#  management api http-commands
+#     protocol https
+#     protocol http
+#     no shut
+- hosts: all
+  gather_facts: no
+  connection: local
+
+  tasks:
+      - name: enable eapi
+        eos_eapi:
+          provider: "{{ provider }}"
+          state: started
+          http: yes

@@ -1,0 +1,5 @@
+[test-mlag]
+172.16.0.238 mlag_num=1 peer_num=2
+172.16.0.239 mlag_num=2 peer_num=1
+
+

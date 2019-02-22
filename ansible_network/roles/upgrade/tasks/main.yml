@@ -1,0 +1,33 @@
+---
+- name: Gather Show Version Facts
+  eos_command:
+    commands:
+      - 'show version'
+    provider: '{{ provider }}'
+  register: showvers
+
+- set_fact: perform_upgrade={{ target_version not in showvers['stdout'][0]['version'] }}
+
+- name: Install new SWI
+  eos_command:
+    commands:
+      - 'install source {{ swi_url }} now'
+    provider: '{{ provider }}'
+    timeout: 300
+  when: perform_upgrade
+  tags: install
+
+- name: Save current config
+  eos_command:
+     commands:
+       - 'write memory'
+     provider: "{{ provider }}"
+  when: perform_upgrade
+
+- name: Issue Reload
+  eos_command:
+      commands:
+        - 'reload now' 
+      provider: "{{ provider }}"
+  ignore_errors: yes
+

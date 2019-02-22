@@ -1,0 +1,21 @@
+{# if this is not the current naming convention the #}
+{# endswith checks neeed to be updated #}
+{# loop through each vlan in the vlan_to_add list #}
+{% for vlan in vlans_to_add %}
+  {% if vlan.state == 'present' %}
+    interface vlan {{ vlan.id }}
+       {% for command in ipv6 %}
+           {{ command  }}  
+       {% endfor %} 
+       {% if core.endswith('a') %}
+           ipv6 address {{ ipv6_base }}{{ vlan.id}}::2/64
+       {% elif core.endswith('b') %}
+           ipv6 address {{ ipv6_base }}{{ vlan.id}}::3/64
+       {% endif %}
+          ipv6 virtual-router address {{ ipv6_base }}{{ vlan.id }}::1
+          ipv6 nd prefix {{ ipv6_base }}{{ vlan.id }}::/64 no-autoconfig
+  {% elif vlan.state == 'absent' %}
+    no interface vlan {{ vlan.id }}
+  {% endif %}
+{% endfor %}
+

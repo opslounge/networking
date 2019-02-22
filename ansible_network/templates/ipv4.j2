@@ -1,0 +1,25 @@
+{# note this template assumes the ansible host contains #}
+{# the letter 'a' for one core and 'b' for the other #}
+{# if this is not the current naming convention the #}
+{# endswith checks neeed to be updated #}
+{# loop through each vlan in the vlan_to_add list #}
+{% for vlan in vlans_to_add %}
+  {% set sub_vlan = vlan.id | string() %}
+  {% if vlan.state == 'present' %}
+    interface vlan {{ vlan.id }}
+       {% for command in ipv4 %}
+           {{ command  }}  
+       {% endfor %} 
+       {% if core.endswith('a') %}
+           {# coreA gets the .2 address #}
+           ip address {{ ipv4_base }}{{ vlan.subnet }}.2/24
+       {% elif core.endswith('b') %}
+           {# coreB gets the .3 #}
+           ip address {{ ipv4_base }}{{ vlan.subnet }}.3/24
+       {% endif %}
+          ip virtual-router address {{ ipv4_base }}{{ vlan.subnet }}.1
+   {% elif vlan.state == 'absent' %}
+      no interface vlan {{ vlan.id }}
+   {% endif %}
+   
+ {% endfor %}

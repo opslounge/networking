@@ -1,0 +1,14 @@
+vars:
+  provider:
+    host: "10.21.93.16"
+    username: "aparsons"
+    password: "dragon22"
+    validate_certs: False
+    wapi: "2.5"
+- name: CONFIGURE NETWORK OF 10.10.0.0/24 AND UPDATE IF EXIST
+  infoblox_network:
+    provider: "{{ provider }}"
+    state: "present"
+    network: "10.10.0.0/24"
+    network_view: "default"
+    comment: "Last Verified 08/2017"

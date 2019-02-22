@@ -1,0 +1,41 @@
+---
+-  hosts: localhost 
+   gather_facts: no
+   connection: local
+   strategy: debug
+
+   vars:
+      add: false
+      get_next: true
+
+   tasks:
+     - name: get next ip
+       infoblox:
+         server: 10.21.93.16
+         username: admin
+         password: infoblox
+         action: get_next_available_ip
+         dns_view: INTERNAL
+         api_version: 2.5
+         network: 172.16.0.0/24
+         start_addr: 172.16.0.11
+         end_addr: 172.16.0.150
+       register: next_info
+       when: get_next
+
+     - debug:
+          var: next_info
+
+     - name: add host
+       infoblox:
+         server: 10.21.93.16
+         username: admin
+         password: infoblox
+         action: add_host
+         host: "sn1-rsw-a02-40.puretec.purestorage.com" 
+         dns_view: INTERNAL
+         api_version: 2.5
+         address: 172.16.0.150
+       register: result
+       when: add
+

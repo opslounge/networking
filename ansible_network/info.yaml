@@ -1,0 +1,17 @@
+- name: Create Host Record in InfoBlox
+  infoblox:
+    host: "10.21.93.16"
+    user: "aparsons"
+    password: "dragon22"
+    wapi_version: '2.5'
+    dns_view: default
+    network_view: default
+    validate_certs: no
+    fact_base: "{{ infoblox }}"
+    action:
+      create_host_record:
+        address: "10.21.169.200"
+        fqdn: "test.puretec.purestorage.com"
+  register: infoblox_info
+  when: infoblox_info.infoblox.get_ip_by_host.ips|length == 0
+

@@ -1,0 +1,36 @@
+---
+-  hosts: localhost 
+   gather_facts: no
+   connection: local
+ 
+   tasks:
+      - name: create new IB network
+        infoblox:
+          server: 10.21.93.16
+          username: admin
+          password: infoblox
+          action: create_network
+          dns_view: INTERNAL
+          network: "{{ ipv4_base }}{{ item.subnet }}.0/24"
+          name: "{{ item.name }}"
+          comment: "{{ item.name }}"
+        with_items: "{{ vlans_to_add }}"
+        when: item.state == 'present'
+
+      - name: remove IB network
+        infoblox:
+          server: 10.21.93.16
+          username: admin
+          password: infoblox
+          action: destroy_network
+          dns_view: INTERNAL
+          network: "{{ ipv4_base }}{{ item.subnet }}.0/24"
+          name: "{{ item.name }}"
+          comment: "{{ item.name }}"
+        with_items: "{{ vlans_to_add }}"
+        when: item.state == 'absent'
+
+
+        
+          
+          

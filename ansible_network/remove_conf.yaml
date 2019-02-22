@@ -1,0 +1,27 @@
+---
+# This playbook will run any list of show commands and dump the json output
+# currently this playbook is setup to run on switches with eapi enabled by using
+# the provider_user connection dictionary but can be run with CLI by switching:
+#
+# provider: "{{ provider_user_cli }}"
+- hosts: sn1-rsw-g05-39
+  #hosts: pod-e-network:demo-network:devinfra-network:platform9-network
+  gather_facts: no
+  connection: local
+ 
+  vars:
+    run_commands:
+      - 'service unsupported-transceiver PureStorageCorp d68715de'
+
+  tasks:
+    - name: run commands
+      eos_command:
+         commands: "{{ run_commands }}"
+         provider: "{{ provider_user }}"
+      register: command
+
+    - set_fact: output='{{ command['stdout'] }}'
+
+    - debug: var=output
+
+

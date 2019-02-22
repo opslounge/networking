@@ -1,0 +1,27 @@
+---
+- hosts: pod-e-network
+  gather_facts: no
+  connection: local
+
+  tasks:
+      - name: Add vlan to distribution
+        eos_config:
+            lines: "vlan {{ item.id }}"
+            provider: "{{ provider }}"
+        with_items: "{{ vlans_to_add }}"
+        when: item.state == 'present'
+
+      - name: Remove vlan from distribution
+        eos_config:
+            lines: "no vlan {{ item.id }}"
+            provider: "{{ provider }}"
+        with_items: "{{ vlans_to_add }}"
+        when: item.state == 'absent'
+
+
+
+      - name: save running config
+        eos_command:
+            commands: "write memory"
+            provider: "{{ provider }}"
+

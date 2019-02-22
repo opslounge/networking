@@ -1,0 +1,859 @@
++++++++++++++++++++++++++++++++++++++++++++
+Daily Report for node: sn1-msw-e01-42
++++++++++++++++++++++++++++++++++++++++++++
+
+*** LOGGING ALERTS ***
+Jul 11 18:04:00 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 11 18:04:37 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 11 18:09:27 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 11 18:10:04 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 11 19:24:19 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 11 19:24:52 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 11 19:42:53 sn1-msw-e01-42 Cli: %SYS-5-CONFIG_SESSION_ENTERED: User ansible entered configuration session ansible_1499826656 on vty4 (10.21.93.29)
+Jul 11 19:43:03 sn1-msw-e01-42 Cli: %SYS-5-CONFIG_SESSION_COMMIT_SUCCESS: User ansible committed configuration session ansible_1499826656 successfully on vty4 (10.21.93.29)
+Jul 11 19:43:04 sn1-msw-e01-42 Cli: %SYS-5-CONFIG_SESSION_EXITED: User ansible exited configuration session ansible_1499826656 on vty4 (10.21.93.29)
+Jul 12 09:09:20 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 09:09:56 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 09:11:02 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 09:11:42 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 09:25:12 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 09:25:12 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 09:25:12 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 09:25:32 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from discarding to learning
+Jul 12 09:25:32 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from learning to forwarding
+Jul 12 09:26:02 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 09:27:44 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 09:27:44 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 09:27:44 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 09:28:04 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from discarding to learning
+Jul 12 09:28:04 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from learning to forwarding
+Jul 12 09:28:20 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 09:28:20 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 09:28:25 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 09:28:25 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 09:28:45 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from discarding to learning
+Jul 12 09:28:45 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from learning to forwarding
+Jul 12 09:29:15 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 09:39:02 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 09:39:35 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 10:15:26 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:15:26 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 10:15:26 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:15:54 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:15:54 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:15:57 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:15:57 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:16:00 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:16:00 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:16:20 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from discarding to learning
+Jul 12 10:16:20 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from learning to forwarding
+Jul 12 10:16:48 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:16:48 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:16:52 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:16:52 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:17:02 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:17:02 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:17:05 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:17:05 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:17:23 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:17:23 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:17:35 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:17:35 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:17:56 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from discarding to learning
+Jul 12 10:17:56 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from learning to forwarding
+Jul 12 10:18:26 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 10:25:58 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:25:58 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 10:25:58 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:26:27 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:26:27 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:26:29 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:26:29 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:26:32 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:26:32 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:26:53 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from discarding to learning
+Jul 12 10:26:53 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from learning to forwarding
+Jul 12 10:27:23 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 10:27:23 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:27:23 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 10:27:23 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:27:27 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:27:27 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:27:35 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:27:35 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:27:38 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:27:39 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:27:57 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:27:57 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:28:09 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:28:09 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:28:29 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from discarding to learning
+Jul 12 10:28:29 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from learning to forwarding
+Jul 12 10:28:59 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 10:39:13 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:39:13 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 10:39:13 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:39:41 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:39:41 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:39:45 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:39:45 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:39:48 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:39:48 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:40:09 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from discarding to learning
+Jul 12 10:40:09 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from learning to forwarding
+Jul 12 10:40:38 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:40:38 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:40:42 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:40:42 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:40:50 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:40:50 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:40:54 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:40:54 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:41:07 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:41:07 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:41:17 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:41:17 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:41:38 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from discarding to learning
+Jul 12 10:41:38 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from learning to forwarding
+Jul 12 10:42:08 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 10:42:21 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to down
+Jul 12 10:42:21 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 10:42:21 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet17 has been removed from instance MST0
+Jul 12 10:42:24 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet17, changed state to up
+Jul 12 10:42:24 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet17 has been added to instance MST0
+Jul 12 10:42:45 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from discarding to learning
+Jul 12 10:42:45 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet17 instance MST0 moving from learning to forwarding
+Jul 12 10:43:15 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 10:50:37 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:50:37 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 10:50:37 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:51:06 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:51:06 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:51:07 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:51:07 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:51:10 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:51:10 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:51:31 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from discarding to learning
+Jul 12 10:51:31 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from learning to forwarding
+Jul 12 10:52:00 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:52:00 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:52:04 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:52:04 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:52:14 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:52:14 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:52:17 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:52:17 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:52:30 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:52:30 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:52:40 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:52:40 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:53:01 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from discarding to learning
+Jul 12 10:53:01 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from learning to forwarding
+Jul 12 10:53:31 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 10:53:40 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to down
+Jul 12 10:53:40 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 10:53:40 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_DEL: Interface Ethernet18 has been removed from instance MST0
+Jul 12 10:53:44 sn1-msw-e01-42 Ebra: %LINEPROTO-5-UPDOWN: Line protocol on Interface Ethernet18, changed state to up
+Jul 12 10:53:44 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_ADD: Interface Ethernet18 has been added to instance MST0
+Jul 12 10:54:04 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from discarding to learning
+Jul 12 10:54:04 sn1-msw-e01-42 Stp: %SPANTREE-6-INTERFACE_STATE: Interface Ethernet18 instance MST0 moving from learning to forwarding
+Jul 12 10:54:34 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 11:30:01 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 11:30:34 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 11:40:13 sn1-msw-e01-42 IgmpSnooping: %IGMPSNOOPING-6-NO_IGMP_QUERIER: No IGMP querier detected in VLAN 2112. IGMP report received from 10.21.112.215 on Ethernet17 for 239.255.255.253
+Jul 12 11:55:39 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 11:56:15 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 14:04:17 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now not stable
+Jul 12 14:04:52 sn1-msw-e01-42 Stp: %SPANTREE-6-STABLE_CHANGE: Stp state is now stable
+Jul 12 14:31:38 sn1-msw-e01-42 FastCapi: %CLEAR-5-COUNTERS: Clear counters on all interfaces by ansible on command-api (10.21.93.29)
+**********************
+
+*** Interface Rates above 50%***
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+ 
+             
+
+                    
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+***********************
+
+*** Interface Discards ***
+    No interface discards!!
+
+
+*** Interface Errors ***
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+            
+            
+            
+            
+            
+            
+            
+   
+ 
+

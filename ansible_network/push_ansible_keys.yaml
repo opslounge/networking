@@ -1,0 +1,14 @@
+---
+# Parent playbook to push the need user information for the root user and ansible
+# password and public-key authentication
+#
+# To Run:
+# This is the only playbook that needs to be run as root user because the copying of the 
+# ansible public key requires a loging that doesn't go to a EOS CLI prompt
+#  
+# sudo ansible-playbook push_ansible_key.yaml
+#
+# Ensure that each of the hosts variable in each playbook is set correctly
+- include: deploy_root_user.yaml
+- include: push_key.yaml
+- include: ansible_key_file.yaml

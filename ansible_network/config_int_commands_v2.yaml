@@ -1,0 +1,35 @@
+---
+# The things that can be changed can be found at:
+# https://github.com/arista-eosplus/ansible-eos-bridging/blob/master/README.md
+# https://github.com/arista-eosplus/ansible-eos-interfaces/blob/master/README.md
+#
+- hosts: all
+  gather_facts: false
+  connection: local
+
+  vars:
+    ints_to_change:
+       - name: "Ethernet1"
+         channel_group:
+             mode: active
+             number: 800
+         mode: access
+         mlag: 300
+         access_vlan: 800
+
+
+  pre_tasks:
+     - name: prep interfaces vars
+       set_fact:
+           interfaces: "{{ ints_to_change  | convert_to_role_var() }}"
+
+     - name: prep switchport vars
+       set_fact: 
+           switchports: "{{ interfaces }}"
+
+     - debug:
+           var: interfaces
+          
+  roles:
+      - arista.eos-bridging
+      - arista.eos-interfaces

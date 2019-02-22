@@ -1,0 +1,37 @@
+---
+#This playbook will allow you to run any global level configuration command or set of commands.  
+#The run_commands variable the one you want to modify and can get anywhere from 1 to N number of commands
+#e.g.
+# vars:
+#   run_commands:
+#       - 'logging level all debugging'
+#       - 'ip name-server 1.1.1.1'
+#
+# Will send two commands 
+# 1) logging level all debugging and 
+# 2) ip name-server 1.1.1.1
+#
+#To all  hosts that this playbook is run against.  If you wanted to add a third command you will add another line 
+#after the ip name-sever command.  Make sure the line starts with a '-' and lines up with the prior '-' that way you have 
+#correct yaml syntax
+#
+# To Run:
+# ansible-playbook config_commands
+- hosts: all
+  gather_facts: no
+  connection: local
+ 
+  vars:
+    run_commands:
+      - 'write memory'
+  tasks:
+    - name: run commands
+      eos_config:
+         commands: "{{ item }}"
+         provider: "{{ provider }}"
+         timeout: 120
+      with_items: "{{ run_commands }}"
+ 
+
+
+

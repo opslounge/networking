@@ -1,0 +1,60 @@
+---
+# Playbook to setup up mlag peering after the switch has been ztp
+# This playbook should be run in a custom inventory file.  Here is what it should look like
+# if the hosts == test-mlag
+#
+# [test-mlag]
+# 172.16.0.31 mlag_num=1 peer_num=2
+# 172.16.0.32 mlag_num=2 peer_num=1
+#
+# Ensure that mlag_num and peer_num are present for each hosts and they should be mirror images
+#
+# To Run:
+# ansible-playbook -i mlag_hosts mlag.yaml
+- hosts: test-mlag
+  gather_facts: no      
+  connection: local
+
+  # these vars are used as the main parts of the mlag configuration.  For information on what they mean:
+  # https://galaxy.ansible.com/arista/eos-mlag/ click on the README tab
+  #
+  # The peer_link_member variable is actually determined dynamically based on which switch types
+  # are being confgured.  There is a file in roles/arista.eos-mlag/files/ called peerlink.ini
+  # This is where the mapping is setup:
+  #
+  # [DCS-7050QX-32-F]
+  # members=Ethernet27,Ethernet28
+  #
+  # So in the above example a DCS-7050QX-32-F switch will have ports Et27-28 
+  # as members of the peer link
+  #
+  # Any new switch mode should follow this format
+  #
+  # [exact model seen in show version]
+  # mebers=<comma seperated list>
+  # You can override this lookup if you statically set the peer_link_member variable 
+  vars:
+     mlag_ip_base: "10.3.10."
+     mlag:
+        mlag_domain_id: "mlag310"
+        local_if_vlan: Vlan3010
+        local_if_ip_address: "{{ mlag_ip_base }}{{ mlag_num }}/30"
+        peer_address: "{{ mlag_ip_base }}{{ peer_num }}"
+        peer_link_mode: trunk
+        peer_link_lacp_mode: active
+        peer_link_enable: true
+        state: present
+        mlag_trunk_group: mlagpeer
+        peer_link_if: Port-Channel310
+
+        
+
+  # this is used to determine what type of switches we are using
+  pre_tasks:
+    - name: gather eos_facts
+      eos_facts:
+         provider: "{{ provider }}"
+     
+  # all of the needed configuration is generated in the roles/arista.eos-mlag/templates files
+  roles:
+     - arista.eos-mlag

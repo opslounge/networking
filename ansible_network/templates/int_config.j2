@@ -1,0 +1,37 @@
+{# loop through all the interfaces in the interface_cmds list #}
+{# and add the configurations that are defined #}
+
+{% for int in interface_cmds %}
+interface {{ int.name }}
+    {% if int.description is defined %}
+    description {{ int.description }}
+    {% endif %}
+
+    {% if int.access_vlan is defined %}
+    switchport access vlan {{ int.access_vlan }} 
+    {% endif %}
+    
+    {% if int.mode is defined %}
+    switchport mode {{ int.mode }} 
+    {% endif %}
+  
+    {% if int.native_vlan is defined %}
+    switchport trunk native vlan {{ int.native_vlan }} 
+    {% endif %}
+
+    {% if int.channel_group is defined %}
+    channel-group {{ int.channel_group }} mode active
+    {% endif %}
+
+    {% if int.mlag_channel is defined %}
+    mlag {{ int.mlag_channel }} 
+    {% endif %}
+
+    {% if int.speed_40 is defined %}
+    speed forced 40gfull 
+    {% endif %}
+
+
+    
+
+{% endfor %} 

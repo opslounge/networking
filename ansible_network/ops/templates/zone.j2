@@ -1,0 +1,13 @@
+{% for vsan in zone %}
+   zone name {{ vsan.zone_name }}  vsan {{ vsan.vsan_id }}
+   {% set pwwns = vsan.pwwns.split('|') %}
+   {% for pwwn in pwwns %}
+       member pwwn {{ pwwn }} 
+   {% endfor %}
+   exit
+   zoneset name {{ vsan.zoneset }} vsan {{ vsan.vsan_id }}
+      member {{ vsan.zone_name }}
+   zoneset activate name {{ vsan.zoneset }} vsan {{ vsan.vsan_id }}
+   zoneset distribute vsan {{ vsan.vsan_id }}
+
+{% endfor %}

@@ -1,0 +1,41 @@
+! templates/pc.j2
+#jinja2: trim_blocks: True
+#jinja2: lstrip_blocks: True 
+
+{% set vars = {'pc_set':  False, 'done': False } %}
+{% for key, values in ansible_net_neighbors.items() %}
+
+    {% set k = key %}
+
+    {% for v in values %}
+       {% set neigh = v['host'].split('.') | first %}
+
+       {% for sw in tor_switches %}
+
+         {% if neigh == sw.name %}
+
+interface {{ key }}
+
+   channel-group {{ sw.port_channel }} mode active        
+          
+         {% if vars.update({'pc_set': True}) %}  {% endif %}
+
+         {% endif %}   
+         {% if vars.pc_set and not vars.done %}
+
+   interface port-channel {{  sw.port_channel }}
+
+         switchport mode trunk
+
+         mlag  {{ sw.port_channel }}
+
+         {% if vars.update({'done': True}) %}  {% endif %}
+
+         {% endif %}         
+
+      {% endfor %}
+
+    {% endfor %} 
+
+{% endfor %}
+

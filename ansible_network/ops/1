@@ -1,0 +1,38 @@
+---
+# runs through and configures interfaces on a given host
+# the interfce command variable should be set with the correct
+# parameters
+# 
+# To Run:
+# ansible-playbook  config_int_commands.yaml
+- hosts: sn1-msw-d12-42
+  gather_facts: no
+  connection: local
+ 
+  vars:
+     interface_cmds:
+           - name: Ethernet1-32
+             description: 'ipmi'
+             access_vlan: 2212
+             #native_vlan: 10
+             mode: access
+             #channel_group: 100
+             #mlag_channel: 100
+
+#           - name: Ethernet41
+ #            description: 'test'
+  #           access_vlan: 10
+   #          native_vlan: 10
+    #         mode: trunk
+     #        channel_group: 100
+      #       mlag_channel: 100
+             
+  tasks:
+    - name: run commands
+      eos_config:
+         provider: "{{ provider }}"
+         src: int_config.j2
+ 
+
+
+

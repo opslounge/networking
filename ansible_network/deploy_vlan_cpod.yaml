@@ -1,0 +1,17 @@
+---
+# Parent playbook to  push vlan configuration out to each of the 3 different 
+# playbooks referenced below.  The key here is that each  playbook has its own
+# individual host parameter so that should be set the the correct value before 
+# the playbook is invoked
+#
+# This playbook will be invoked in a serial pattern.  Which is to say the core
+# config will happen first then dist then nxos devices
+#
+# To Run:
+# ansible-playbook deploy_vlan.yaml
+#
+# Note you will want to configure the vlan information that is used in these playbooks 
+# before the playbook gets invovked.  The group_vars/all file will be the place to look 
+
+- include: infra_agg.yaml
+- include: create_pg.yaml

@@ -1,0 +1,29 @@
+
+---
+- hosts: prod-vc2
+  connection: local
+  user: root
+  sudo: false
+  gather_facts: false
+  serial: 1
+  
+  vars:
+    my_env: test
+    vcenter_hostname: "prod-vc2.puretec.purestorage.com"
+    vcenter_username: "administrator@puretec-infra.com"
+    vcenter_password: "Osmium&6"
+  
+  tasks:
+  - local_action:
+       module: vmware_dvs_portgroup
+       hostname: "{{ vcenter_hostname }}"
+       username: "{{ vcenter_username }}"
+       password: "{{ vcenter_password }}"
+       switch_name: sn1-infra01
+       portgroup_name: "{{ item.name }}"
+       vlan_id: "{{ item.id }}"
+       num_ports: 120
+       portgroup_type: earlyBinding
+       state: "{{ item.state }}"
+    with_items: "{{ vlans_to_add }}"
+        

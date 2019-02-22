@@ -1,0 +1,24 @@
+---
+- name: query DNS
+  hosts: localhost
+  connection: local
+  gather_facts: no
+  strategy: debug
+  tasks:
+  - name: Create Host Record in InfoBlox
+    infoblox:
+        host: "{{ infoblox.host }}"
+        user: "admin"
+        password: "admin"
+        wapi_version: '2.5'
+        dns_view: default
+        network_view: default
+        validate_certs: no
+        fact_base: "{{ infoblox }}"
+        action:
+        create_host_record:
+          address: "{{ network| default(infoblox.network)}}"
+          fqdn: "{{ inventory_hostname }}"
+    register: infoblox_info
+    when: infoblox_info.infoblox.get_ip_by_host.ips|length == 0
+

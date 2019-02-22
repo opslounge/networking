@@ -1,0 +1,73 @@
+# vlans that will be referenced in the deploy_vlan plabyook
+# each vlan can have the following attribute:
+#  id
+#  name
+#  state: (either present or absent)
+vlans_to_add: 
+    - id: 2240
+      name: test
+      state: present
+      subnet: 240
+    
+#this is the ipv4 and ipv6 configuration used by the ipv4.j2 and ipv6.j2
+# that is called in the core_vlan_add.yaml playbook
+ipv4_base: "172.16."
+ipv6_base: "2620:125:9004:"
+
+
+ipv6: 
+  #  - "ipv6 nd managed-config-flag"
+  #  - "ipv6 nd other-config-flag"
+ipv4:
+    - "ip helper-address 10.21.93.16"
+
+
+# key based authenticaiton details
+provider:
+  host: '{{ inventory_hostname }}'
+  username: ansible
+  authorize: true
+  use_ssl: yes
+  transport: cli
+  validate_certs: false
+  ssh_keyfile: "/home/ansible/.ssh/id_rsa"
+
+# user name and password auth details and provider method eapi
+provider_user:
+  host: '{{ inventory_hostname }}'
+  username: ansible
+  password: Osmium&6
+  authorize: true
+  use_ssl: true
+  transport: eapi
+  validate_certs: false
+
+provider_user_cli:
+  host: '{{ inventory_hostname }}'
+  username: ansible
+  password: Osmium&6
+  authorize: true
+  use_ssl: true
+  transport: cli
+  validate_certs: false
+
+
+provider_cisco:
+  host: '{{ inventory_hostname }}'
+  username: admin
+  password: password
+  authorize: true
+  use_ssl: yes
+  transport: cli
+  validate_certs: false
+ 
+
+timeout: 300
+
+#upgrade stuff
+target_version: "4.18"
+image: "EOS-4.18.0F.swi"
+swi_url: "http://172.16.0.5:8080/files/images/{{ image }}"
+swi_dest: "flash"
+install_pause: 200 
+

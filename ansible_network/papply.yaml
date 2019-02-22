@@ -1,0 +1,114 @@
+---
+# runs through and configures interfaces on a given host
+# the interfce command variable should be set with the correct
+# parameters
+#
+# Right now you can set the following parameters
+# access vlan
+# switchport mode
+# channel-group
+# speed 40g
+# mlag number
+# description
+# trunk native vlan
+#
+# If you want to add the configs you need to set action == add
+# If you want to remove the configs you need to set the action == del
+#
+# So if you want to remove the access vlan make sure you have
+# access_vlan set to a value and action set to del.  If the action is del
+# then every command that is uncommented and has a value with be removed
+# 
+# To Run:
+# ansible-playbook  config_int_commands.yaml
+- hosts: sn1-agr-g06-36,sn1-agr-g06-38 
+  gather_facts: no
+  connection: local
+ 
+  vars:
+     range: et1/1
+     conf_action: add
+     interface_cmds:
+          # - name:  "{{ range }}"
+           #  description: 'storage'
+            # access_vlan: 153
+            # native_vlan: 2202
+           #  mode: trunk 
+            # channel_group: 303
+            # mlag_channel: 303
+            # speed_40: Forced
+
+           - name:  et1/1
+             description: 'g01'
+             channel_group: 71
+           - name:  et2/1
+             description: 'g01'
+             channel_group: 71             
+           - name:  et3/1
+             description: 'g01'
+             channel_group: 71
+           - name:  et4/1
+             description: 'g01'
+             channel_group: 71
+           - name:  et5/1
+             description: 'g02'
+             channel_group: 72
+           - name:  et6/1
+             description: 'g02'
+             channel_group: 72
+           - name:  et7/1
+             description: 'g02'
+             channel_group: 72
+           - name:  et8/1
+             description: 'g02'
+             channel_group: 72
+           - name:  et9/1
+             description: 'g03'
+             channel_group: 73
+           - name:  et10/1
+             description: 'g03'
+             channel_group: 73
+           - name: et11/1
+             description: 'g03'
+             channel_group: 73
+           - name:  et12/1
+             description: 'g03'
+             channel_group: 73
+           - name:  et13/1
+             description: 'g04'
+             channel_group: 74
+           - name:  et14/1
+             description: 'g04'
+             channel_group: 74 
+           - name: et15/1
+             description: 'g04'
+             channel_group: 74
+           - name:  et16/1
+             description: 'g04'
+             channel_group: 74
+           - name:  et17/1
+             description: 'g05'
+             channel_group: 75
+           - name:  et18/1
+             description: 'g05'
+             channel_group: 75    
+           - name:  et19/1
+             description: 'g05'
+             channel_group: 75
+           - name:  et20/1
+             description: 'g05'
+             channel_group: 75
+
+
+
+ 
+  tasks:
+    - name: run commands
+      eos_config:
+         provider: "{{ provider_user_cli }}"
+         src: int_config.j2
+         save: true
+ 
+
+
+

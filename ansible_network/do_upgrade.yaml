@@ -1,0 +1,18 @@
+---
+# Per its name this playbook will preform switch upgrades
+# The upgrade will only proceed in the target version is not
+# in the output of the current show version
+#
+# Currently the source url of swi file is the ztp server
+- hosts: 172.16.0.101
+  gather_facts: no
+  connection: local
+  vars:
+    provider: "{{ provider_user }}"
+    target_version: "4.18"
+    image: "EOS-4.18.0F.swi"
+    swi_url: "http://172.16.0.5:8080/files/images/{{ image }}"
+
+
+  roles:
+     - upgrade
