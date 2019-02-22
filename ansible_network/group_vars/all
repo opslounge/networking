@@ -19,7 +19,7 @@ ipv6:
   #  - "ipv6 nd managed-config-flag"
   #  - "ipv6 nd other-config-flag"
 ipv4:
-    - "ip helper-address 10.21.93.16"
+    - "ip helper-address your dns here"
 
 
 # key based authenticaiton details
@@ -36,7 +36,7 @@ provider:
 provider_user:
   host: '{{ inventory_hostname }}'
   username: ansible
-  password: Osmium&6
+  password: password
   authorize: true
   use_ssl: true
   transport: eapi
@@ -45,7 +45,7 @@ provider_user:
 provider_user_cli:
   host: '{{ inventory_hostname }}'
   username: ansible
-  password: Osmium&6
+  password: password
   authorize: true
   use_ssl: true
   transport: cli
@@ -67,7 +67,7 @@ timeout: 300
 #upgrade stuff
 target_version: "4.18"
 image: "EOS-4.18.0F.swi"
-swi_url: "http://172.16.0.5:8080/files/images/{{ image }}"
+swi_url: "http://youriphere:8080/files/images/{{ image }}"
 swi_dest: "flash"
 install_pause: 200 
 
