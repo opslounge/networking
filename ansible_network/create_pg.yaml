@@ -10,8 +10,8 @@
   vars:
     my_env: test
     vcenter_hostname: "prod-vc2.puretec.purestorage.com"
-    vcenter_username: "administrator@puretec-infra.com"
-    vcenter_password: "Osmium&6"
+    vcenter_username: "administrator@vsphere.local"
+    vcenter_password: "password here"
   
   tasks:
   - local_action:
