@@ -6,7 +6,7 @@
    tasks:
       - name: create new IB network
         infoblox:
-          server: 10.21.93.16
+          server: "server address"
           username: admin
           password: infoblox
           action: create_network
@@ -19,7 +19,7 @@
 
       - name: remove IB network
         infoblox:
-          server: 10.21.93.16
+          server: "server address"
           username: admin
           password: infoblox
           action: destroy_network

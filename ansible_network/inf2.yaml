@@ -1,8 +1,8 @@
 vars:
   provider:
-    host: "10.21.93.16"
+    host: "host address here"
     username: "aparsons"
-    password: "dragon22"
+    password: "password"
     validate_certs: False
     wapi: "2.5"
 - name: CONFIGURE NETWORK OF 10.10.0.0/24 AND UPDATE IF EXIST
